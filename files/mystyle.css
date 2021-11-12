@@ -12,8 +12,8 @@ h1 {
   
   img{
     opacity: 0.7;
-    width: 1000px;
-    height: 500px;
+    width: 1150px;
+    height: 600px;
   }
   .container {
     position: relative;
@@ -23,7 +23,7 @@ h1 {
   
   .container .btn {
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -135,11 +135,18 @@ h1 {
     align-items: center;
     justify-content: center;
     background-color: rgb(235, 226, 200);
-    width: 500px;
-    margin-left:120px;
+    top: 10px;
+    width: 1000px;
+    margin-left:40px;
     text-align: left;
-    
-    
 
+    
   }
+
+hr{
+  border: 5px solid rgb(99, 93, 93);
+  border-style: dashed;
+  border-radius: 5px;
+
+}
   
