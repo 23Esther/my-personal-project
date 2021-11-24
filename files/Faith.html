@@ -1,20 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="stylesheet" href="style2.css" />
-    <title>Religion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style2.css" />
 </head>
+
 <body>
-    <h1>RELIGION BOOKS</h1>
-    <div class="box-sizing">1</div>
-        <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617074089l/56637947.jpg"> 
-     
-     
+
+<div style="text-align:center">
+  <h2>FAITH BOOKS</h2>
+  <p>Click on the images below for full details:</p>
+</div>
+
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="imagy/ArtFaith.jpg" alt="Nature" style="width:60%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="imagy/hunger.jpg" alt="Snow" style="width:60%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="imagy/tenbest.jpg" alt="Mountains" style="width:60%" onclick="myFunction(this);">
+  </div>
+  
+  <div class="column">
+    <img src="imagy/faithFact.jpg" alt="Mountains" style="width:60%" onclick="myFunction(this);">
+  </div>
+ 
+  <div class="column">
+    <img src="imagy/image.png" alt="Mountains" style="width:60%" justify-content="right" onclick="myFunction(this);">
+  </div>
+
+
+<div class="container"> 
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:40%" style="height:30%" justify-content="center">
+  <div id="imgtext"></div>
+</div>
+
+
+  
+  <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+    </script>
     
-    
-     </div>   
-    <div class ="box-sizing"></div>
-       <img src ="https://i2.wp.com/inkblotsofhope.com/wp-content/uploads/2017/03/10-faith-filled-books-for-the-chronically-ill-6-e1489209067630.png?w=1080">
-    </div>
 </body>
 </html>
+    
