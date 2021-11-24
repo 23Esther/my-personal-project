@@ -1,0 +1,12 @@
+h1{
+   color:crimson;
+}
+
+ border-box{
+   width: 150px;
+   height: 160px;
+   position: absolute;
+   display: grid; 
+
+
+}
