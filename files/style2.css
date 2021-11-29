@@ -7,6 +7,7 @@ body {
   margin: 0;
   font-family: Arial;
 }
+ 
 
 /* The grid: Four equal columns that floats next to each other */
 .column {
@@ -19,6 +20,7 @@ body {
 .column img {
   opacity: 0.8; 
   cursor: pointer; 
+  
 }
 
 .column img:hover {
@@ -28,7 +30,8 @@ body {
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
   clear: both;
 }
 
@@ -55,5 +58,20 @@ body {
   color: white;
   font-size: 35px;
   cursor: pointer
+}
+
+.container2 .btn2 {
+  position: absolute;
+  left: 800px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(168, 17, 182);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
 }
 
