@@ -6,6 +6,73 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>ACADEMIC BOOKS</h1>
+    <div style="text-align:center">
+        <h2>ACADEMIC BOOKS </h2>
+        <p>Click on the images and scroll down  for more details:</p>
+      </div>
+      
+      <!-- The four columns -->
+      <div class="row">
+        <div class="column">
+          <img src="imagy2/leader.jpg" alt="leader" style="width:50%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="imagy2/survive.jpg" alt="survive" style="width:50%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="imagy2/rock.jpg" alt="rock" style="width:50%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="imagy2/sucess.jpg" alt="sucess" style="width:70%" onclick="myFunction(this);">
+        </div>
+        
+        <div class="column">
+          <img src="imagy2/trouble.jpg" alt="trouble" style="width:50%" onclick="myFunction(this);">
+        </div>
+      
+        <div class="column">
+          <img src="imagy2/racism.jpg" alt="racism" style="width:50%" onclick="myFunction(this);">
+        </div>
+      
+        <div class="column">
+          <img src="imagy2/essay.jpg" alt="essay" style="width: 50%" onclick="myFunction(this);">
+          </div>
+      
+        <div class="column">
+            <img src="imagy2/Academic.jpg" alt="Academic" style="width:50%" onclick="myFunction(this);">
+        </div>
+       
+      
+    </div> 
+    <p><h3>About Book</h3></p>
+
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:30%" >
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<p>
+
+<div class="container2">
+   <a href = "Lifestyle.html" button class="btn2">GO TO LIFESTYLE BOOKS  </button></a>
+</div>
+</p>
+
+  
 </body>
 </html>
+
+
+      
